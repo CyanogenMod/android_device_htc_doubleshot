@@ -44,9 +44,10 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
-	device/htc/doubleshot/ramdisk/init.doubleshot.rc:root/init.doubleshot.rc \
-	device/htc/doubleshot/ramdisk/init.doubleshot.usb.rc:root/init.doubleshot.usb.rc \
-	device/htc/doubleshot/ramdisk/ueventd.doubleshot.rc:root/ueventd.doubleshot.rc
+    device/htc/doubleshot/ramdisk/init.rc:root/init.rc \
+    device/htc/doubleshot/ramdisk/init.doubleshot.rc:root/init.doubleshot.rc \
+    device/htc/doubleshot/ramdisk/init.doubleshot.usb.rc:root/init.doubleshot.usb.rc \
+    device/htc/doubleshot/ramdisk/ueventd.doubleshot.rc:root/ueventd.doubleshot.rc
 
 ## recovery and custom charging
 PRODUCT_COPY_FILES += \
