@@ -36,6 +36,11 @@ BOARD_KERNEL_PAGE_SIZE := 2048
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
+TARGET_PREBUILT_KERNEL := device/htc/doubleshot/prebuilt/kernel
+
+TARGET_PROVIDES_INIT_TARGET_RC := true
+
+#TARGET_PROVIDES_LIBRIL := vendor/htc/doubleshot/proprietary/lib/libhtc-ril.so
 
 WIFI_DRIVER_MODULE_NAME          := bcmdhd
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcmdhd.ko"
@@ -45,6 +50,9 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_ROTATOR_KERNEL_FORMATS
 
 # Qcom GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := doubleshot
+
+#RIL
+BOARD_PROVIDES_LIBRIL := true
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
