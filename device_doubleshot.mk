@@ -115,6 +115,7 @@ PRODUCT_COPY_FILES += \
 
 # Custom media config for HTC camera
 PRODUCT_COPY_FILES += \
+    device/htc/msm8660-common/configs/media_codecs.xml:system/etc/media_codecs.xml \
     device/htc/doubleshot/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 ## misc
