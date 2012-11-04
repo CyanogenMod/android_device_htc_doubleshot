@@ -43,3 +43,4 @@ rilswitch.ganlibpath=/system/lib/libganril.so
 
 # UMS
 persist.sys.usb.config=mass_storage,adb
+ro.vold.umsdirtyratio=50
