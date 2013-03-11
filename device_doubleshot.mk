@@ -22,31 +22,19 @@ $(call inherit-product, device/htc/msm8660-common/msm8660.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/doubleshot/overlay
 
-# GPS and Light
+# GPS
 PRODUCT_PACKAGES += \
-    gps.doubleshot \
-    lights.doubleshot \
-    sensors.doubleshot
-
-# Wifi Calling
-PRODUCT_PACKAGES += \
-    GanOptimizer
-
-## The gps config appropriate for this device
-PRODUCT_COPY_FILES += device/common/gps/gps.conf_US:system/etc/gps.conf
-
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
+    gps.doubleshot
 
 # Wifi
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
-	device/htc/doubleshot/ramdisk/init.doubleshot.rc:root/init.doubleshot.rc \
-	device/htc/doubleshot/ramdisk/init.doubleshot.usb.rc:root/init.doubleshot.usb.rc \
-	device/htc/doubleshot/ramdisk/ueventd.doubleshot.rc:root/ueventd.doubleshot.rc
+    device/htc/doubleshot/ramdisk/fstab.doubleshot:root/fstab.doubleshot \
+    device/htc/doubleshot/ramdisk/init.doubleshot.rc:root/init.doubleshot.rc \
+    device/htc/doubleshot/ramdisk/init.doubleshot.usb.rc:root/init.doubleshot.usb.rc \
+    device/htc/doubleshot/ramdisk/ueventd.doubleshot.rc:root/ueventd.doubleshot.rc
 
 ## recovery and custom charging
 PRODUCT_COPY_FILES += \
@@ -58,27 +46,27 @@ PRODUCT_COPY_FILES += \
 
 # Some misc configeration files
 PRODUCT_COPY_FILES += \
-	device/htc/doubleshot/vold.fstab:system/etc/vold.fstab
+    device/htc/doubleshot/vold.fstab:system/etc/vold.fstab
 
 # Keylayouts and Keychars
 PRODUCT_COPY_FILES += \
-	device/htc/doubleshot/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-	device/htc/doubleshot/keylayout/doubleshot-keypad.kl:system/usr/keylayout/doubleshot-keypad.kl \
-	device/htc/doubleshot/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
-	device/htc/doubleshot/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-	device/htc/doubleshot/keychars/doubleshot-keypad.kcm:system/usr/keychars/doubleshot-keypad.kcm \
-	device/htc/doubleshot/keychars/BT_HID.kcm.bin:system/usr/keychars/BT_HID.kcm.bin \
-	device/htc/doubleshot/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-	device/htc/doubleshot/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm
+    device/htc/doubleshot/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    device/htc/doubleshot/keylayout/doubleshot-keypad.kl:system/usr/keylayout/doubleshot-keypad.kl \
+    device/htc/doubleshot/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
+    device/htc/doubleshot/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
+    device/htc/doubleshot/keychars/doubleshot-keypad.kcm:system/usr/keychars/doubleshot-keypad.kcm \
+    device/htc/doubleshot/keychars/BT_HID.kcm.bin:system/usr/keychars/BT_HID.kcm.bin \
+    device/htc/doubleshot/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
+    device/htc/doubleshot/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm
 
 # Input device config
 PRODUCT_COPY_FILES += \
-	device/htc/doubleshot/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
-	device/htc/doubleshot/idc/curcial-oj.idc:system/usr/idc/curcial-oj.idc \
-	device/htc/doubleshot/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
+    device/htc/doubleshot/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
+    device/htc/doubleshot/idc/curcial-oj.idc:system/usr/idc/curcial-oj.idc \
+    device/htc/doubleshot/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
 
 # HTC BT Audio tune
-PRODUCT_COPY_FILES += device/htc/doubleshot/configs/AudioBTID.csv:system/etc/AudioBTID.csv
+PRODUCT_COPY_FILES += device/htc/doubleshot/dsp/AudioBTID.csv:system/etc/AudioBTID.csv
 
 # Sound configs
 PRODUCT_COPY_FILES += \
@@ -110,11 +98,10 @@ PRODUCT_COPY_FILES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-# Custom media config for HTC camera
-PRODUCT_COPY_FILES += \
-    device/htc/doubleshot/configs/media_profiles.xml:system/etc/media_profiles.xml
+# Bluetooth firmware
+$(call inherit-product, device/htc/msm8660-common/bcm_hcd.mk)
 
 ## misc
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -126,11 +113,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/doubleshot/doubleshot-vendor.mk)
 
-
 # media profiles and capabilities spec
 $(call inherit-product, device/htc/doubleshot/media_a1026.mk)
 
 ## htc audio settings
 $(call inherit-product, device/htc/doubleshot/media_htcaudio.mk)
 
-$(call inherit-product, frameworks/base/build/phone-xhdpi-1024-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+
+# Discard inherited values and use our own instead.
+PRODUCT_DEVICE := doubleshot
+PRODUCT_NAME := doubleshot
+PRODUCT_BRAND := htc
+PRODUCT_MODEL := MyTouch 4G Slide
+PRODUCT_MANUFACTURER := HTC

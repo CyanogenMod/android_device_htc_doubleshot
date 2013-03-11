@@ -37,14 +37,14 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
 
-WIFI_DRIVER_MODULE_NAME          := bcmdhd
-WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcmdhd.ko"
-
-# QCOM Gralloc/Copybit/HWcomposer
-COMMON_GLOBAL_CFLAGS += -DQCOM_ROTATOR_KERNEL_FORMATS
-
-# Qcom GPS
+# GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := doubleshot
+
+# RIL
+BOARD_USES_LEGACY_RIL := true
+
+# Wifi
+-include device/htc/msm8660-common/bcmdhd.mk
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -53,13 +53,3 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16776192
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 838859776
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1252770816
 BOARD_FLASH_BLOCK_SIZE := 262144
-
-# Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TARGET_RECOVERY_UI_LIB := librecovery_ui_doubleshot
-BOARD_CUSTOM_GRAPHICS:= ../../../device/htc/doubleshot/recovery/graphics.c
-BOARD_USES_MMCUTILS := true
-BOARD_HAS_NO_MISC_PARTITION := true
-
-# multitouch games need this:
-BOARD_USE_LEGACY_TOUCHSCREEN := true

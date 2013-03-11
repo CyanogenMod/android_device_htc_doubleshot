@@ -106,8 +106,8 @@ key B {
 	label:			'B'
 	base:			'b'
 	shift, capslock:	'B'
-	alt:			'+'
-	shift+alt:		'+'
+	alt:			'b'
+	shift+alt:		'B'
 }
 
 key C {
