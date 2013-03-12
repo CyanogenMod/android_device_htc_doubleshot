@@ -17,352 +17,307 @@ type ALPHA
 key 0 {
 	label:			'0'
 	base:			'0'
-	shift, capslock:	'0'
+	shift:			'0'
 	alt:			'0'
-	shift+alt:		'0'
 }
 
 key 1 {
 	label:			'1'
 	base:			'1'
-	shift, capslock:	'1'
+	shift:			'1'
 	alt:			'1'
-	shift+alt:		'1'
 }
 
 key 2 {
 	label:			'2'
 	base:			'2'
-	shift, capslock:	'2'
+	shift:			'2'
 	alt:			'2'
-	shift+alt:		'2'
 }
 
 key 3 {
 	label:			'3'
 	base:			'3'
-	shift, capslock:	'3'
+	shift:			'3'
 	alt:			'3'
-	shift+alt:		'3'
 }
 		
 key 4 {
 	label:			'4'
 	base:			'4'
-	shift, capslock:	'4'
+	shift:			'4'
 	alt:			'4'
-	shift+alt:		'4'
 }
 
 key 5 {
 	label:			'5'
 	base:			'5'
-	shift, capslock:	'5'
+	shift:			'5'
 	alt:			'5'
-	shift+alt:		'5'
 }
 
 key 6 {
 	label:			'6'
 	base:			'6'
-	shift, capslock:	'6'
+	shift:			'6'
 	alt:			'6'
-	shift+alt:		'6'
 }
 
 key 7 {
 	label:			'7'
 	base:			'7'
-	shift, capslock:	'7'
+	shift:			'7'
 	alt:			'7'
-	shift+alt:		'7'
 }
 
 key 8 {
 	label:			'8'
 	base:			'8'
-	shift, capslock:	'8'
+	shift:			'8'
 	alt:			'8'
-	shift+alt:		'8'
 }
 
 key 9 {
 	label:			'9'
 	base:			'9'
-	shift, capslock:	'9'
+	shift:			'9'
 	alt:			'9'
-	shift+alt:		'9'
 }
 
 key A {
 	label:			'A'
 	base:			'a'
-	shift, capslock:	'A'
+	shift:			'A'
 	alt:			'!'
-	shift+alt:		'!'
 }
 
 key B {
 	label:			'B'
 	base:			'b'
-	shift, capslock:	'B'
-	alt:			'b'
-	shift+alt:		'B'
+	shift:			'B'
+	alt:			'+'
 }
 
 key C {
 	label:			'C'
 	base:			'c'
-	shift, capslock:	'C'
+	shift:			'C'
 	alt:			'+'
-	shift+alt:		'+'
 }
 
 key D {
 	label:			'D'
 	base:			'd'
-	shift, capslock:	'D'
+	shift:			'D'
 	alt:			'$'
-	shift+alt:		'$'
 }
 
 key E {
 	label:			'E'
 	base:			'e'
-	shift, capslock:	'E'
+	shift:			'E'
 	alt:			'3'
-	shift+alt:		'3'
 }
 
 key F {
 	label:			'F'
 	base:			'f'
-	shift, capslock:	'F'
+	shift:			'F'
 	alt:			'%'
-	shift+alt:		'%'
 }
 
 key G {
 	label:			'G'
 	base:			'g'
-	shift, capslock:	'G'
+	shift:			'G'
 	alt:			'&'
-	shift+alt:		'&'
 }
 
 key H {
 	label:			'H'
 	base:			'h'
-	shift, capslock:	'H'
+	shift:			'H'
 	alt:			'*'
-	shift+alt:		'*'
 }
 
 key I {
 	label:			'I'
 	base:			'i'
-	shift, capslock:	'I'
+	shift:			'I'
 	alt:			'8'
-	shift+alt:		'8'
 }
 
 key J {
 	label:			'J'
 	base:			'j'
-	shift, capslock:	'J'
+	shift:			'J'
 	alt:			'('
-	shift+alt:		'('
 }
 
 key K {
 	label:			'K'
 	base:			'k'
-	shift, capslock:	'K'
+	shift:			'K'
 	alt:			')'
-	shift+alt:		')'
 }
 
 key L {
 	label:			'L'
 	base:			'l'
-	shift, capslock:	'L'
+	shift:			'L'
 	alt:			'\\'
-	shift+alt:		'\\'
 }
 
 key M {
 	label:			'M'
 	base:			'm'
-	shift, capslock:	'M'
+	shift:			'M'
 	alt:			'"'
-	shift+alt:		'"'
 }
 
 key N {
 	label:			'N'
 	base:			'n'
-	shift, capslock:	'N'
+	shift:			'N'
 	alt:			'\''
-	shift+alt:		'\''
 }
 
 key O {
 	label:			'O'
 	base:			'o'
-	shift, capslock:	'O'
+	shift:			'O'
 	alt:			'9'
-	shift+alt:		'9'
 }
 
 key P {
 	label:			'P'
 	base:			'p'
-	shift, capslock:	'P'
+	shift:			'P'
 	alt:			'0'
-	shift+alt:		'0'
 }
 
 key Q {
 	label:			'Q'
 	base:			'q'
-	shift, capslock:	'Q'
+	shift:			'Q'
 	alt:			'1'
-	shift+alt:		'1'
 }
 
 key R {
 	label:			'R'
 	base:			'r'
-	shift, capslock:	'R'
+	shift:			'R'
 	alt:			'4'
-	shift+alt:		'4'
 }
 
 key S {
 	label:			'S'
 	base:			's'
-	shift, capslock:	'S'
+	shift:			'S'
 	alt:			'#'
-	shift+alt:		'#'
 }
 
 key T {
 	label:			'T'
 	base:			't'
-	shift, capslock:	'T'
+	shift:			'T'
 	alt:			'5'
-	shift+alt:		'5'
 }
 
 key U {
 	label:			'U'
 	base:			'u'
-	shift, capslock:	'U'
+	shift:			'U'
 	alt:			'7'
-	shift+alt:		'7'
 }
 
 key V {
 	label:			'V'
 	base:			'v'
-	shift, capslock:	'V'
+	shift:			'V'
 	alt:			'='
-	shift+alt:		'='
 }
 
 key W {
 	label:			'W'
 	base:			'w'
-	shift, capslock:	'W'
+	shift:			'W'
 	alt:			'2'
-	shift+alt:		'2'
 }
 
 key X {
 	label:			'X'
 	base:			'x'
-	shift, capslock:	'X'
-	alt:			'-'  
-	shift+alt:		'-'  
+	shift:			'X'
+	alt:			'-' 
 }
 
 key Y {
 	label:			'Y'
 	base:			'y'
-	shift, capslock:	'Y'
+	shift:			'Y'
 	alt:			'6'
-	shift+alt:		'6'
 }
 
 key Z {
 	label:			'Z'
 	base:			'z'
-	shift, capslock:	'Z'
-	alt:			'_'  
-	shift+alt:		'_'  
+	shift:			'Z'
+	alt:			'_'
 }
 
 key COMMA {
 	label:			','
 	base:			','
-	shift, capslock:	','
+	shift:			','
 	alt:			';'
-	shift+alt:		';'
 }
 
 key PERIOD {
 	label:			'.'
 	base:			'.'
-	shift, capslock:	'.'
+	shift:			'.'
 	alt:			':'
-	shift+alt:		':'
 }
 
 key SPACE {
-	label:			'\u0020'  
-	base:			'\u0020'  
-	shift, capslock:	'\u0020'  
-	alt:			'\u0009'  
-	shift+alt:		'\u0009'  
+	label:			'\u0020'
+	base:			'\u0020'
+	shift:			'\u0020'
+	alt:			'\u0009'
 }
 
 key ENTER {
-	label:			'\u000A'  
-	base:			'\u000A'  
-	shift, capslock:	'\u000A'  
-	alt:			'\u000A'  
-	shift+alt:		'\u000A'  
+	label:			'\u000A'
+	base:			'\u000A'
+	shift:			'\u000A'
+	alt:			'\u000A'
 }
 
 key AT {
 	label:			'@'
 	base:			'@'
-	shift, capslock:	'@'
+	shift:			'@'
 	alt:			'~'
-	shift+alt:		'~'
 }
 
-key FUNC_1 {
+key F1 {
 	label:			'\uEF04'
 	base:			'\uEF04'
-	shift, capslock:	'\uEF04'
+	shift:			'\uEF04'
 	alt:			'\uEF03'
-	shift+alt:		'\uEF03'
 }
 
-key FUNC_2 {
-	label:			'?'
+key F2 {
+	label:			'\uEF01'
 	base:			'\uEF01'
-	shift, capslock:	'\uEF01'
+	shift:			'\uEF01'
 	alt:			'\uEF01'
-	shift+alt:		'\uEF01'
 }
 
-key FUNC_3 {
-        label:                  '?'
-        base:                   '?'
-        shift, capslock:        '?'
-        alt:                    '/'
-        shift+alt:              '/'
+key SLASH {
+	label:			'?'
+	base:			'?'
+	shift:			'?'
+	alt:			'/'
 }
-
