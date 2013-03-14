@@ -38,7 +38,8 @@
     <value>3</value>
   </array>
   <array name="cpu.speeds">
-    <value>192000</value>
+    <value>96000</value>
+    <value>196000</value>
     <value>384000</value>
     <value>432000</value>
     <value>486000</value>
@@ -71,6 +72,7 @@
   <item name="cpu.awake">10</item>
   <!-- Power consumption at different speeds -->
   <array name="cpu.active">
+    <value>40</value>
     <value>60</value>
     <value>110</value>
     <value>125</value>
