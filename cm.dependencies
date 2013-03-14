@@ -4,8 +4,8 @@
     "target_path": "device/htc/msm8660-common"
   },
   {
-    "repository": "htc-kernel-doubleshot",
-    "target_path": "kernel/htc/doubleshot",
+    "repository": "android_kernel_htc_msm8660",
+    "target_path": "kernel/htc/android_kernel_htc_msm8660",
     "branch": "jellybean"
   }
 ]
