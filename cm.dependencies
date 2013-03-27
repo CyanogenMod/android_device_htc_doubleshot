@@ -6,6 +6,6 @@
   {
     "repository": "android_kernel_htc_msm8660",
     "target_path": "kernel/htc/android_kernel_htc_msm8660",
-    "branch": "jellybean-ds"
+    "branch": "cm-10.1-ds"
   }
 ]
