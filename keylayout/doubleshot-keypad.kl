@@ -61,7 +61,7 @@ key 102   HOME
 key 107   ENDCALL
 key 114   VOLUME_DOWN		WAKE
 key 115   VOLUME_UP			WAKE
-key 116   POWER
+key 116   POWER		WAKE
 key 139   MENU
 key 150   F1
 key 158   BACK
