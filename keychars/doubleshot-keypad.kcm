@@ -17,307 +17,307 @@ type ALPHA
 key 0 {
 	label:			'0'
 	base:			'0'
-	shift:			'0'
+	shift, capslock:			'0'
 	alt:			'0'
 }
 
 key 1 {
 	label:			'1'
 	base:			'1'
-	shift:			'1'
+	shift, capslock:			'1'
 	alt:			'1'
 }
 
 key 2 {
 	label:			'2'
 	base:			'2'
-	shift:			'2'
+	shift, capslock:			'2'
 	alt:			'2'
 }
 
 key 3 {
 	label:			'3'
 	base:			'3'
-	shift:			'3'
+	shift, capslock:			'3'
 	alt:			'3'
 }
 		
 key 4 {
 	label:			'4'
 	base:			'4'
-	shift:			'4'
+	shift, capslock:			'4'
 	alt:			'4'
 }
 
 key 5 {
 	label:			'5'
 	base:			'5'
-	shift:			'5'
+	shift, capslock:			'5'
 	alt:			'5'
 }
 
 key 6 {
 	label:			'6'
 	base:			'6'
-	shift:			'6'
+	shift, capslock:			'6'
 	alt:			'6'
 }
 
 key 7 {
 	label:			'7'
 	base:			'7'
-	shift:			'7'
+	shift, capslock:			'7'
 	alt:			'7'
 }
 
 key 8 {
 	label:			'8'
 	base:			'8'
-	shift:			'8'
+	shift, capslock:			'8'
 	alt:			'8'
 }
 
 key 9 {
 	label:			'9'
 	base:			'9'
-	shift:			'9'
+	shift, capslock:			'9'
 	alt:			'9'
 }
 
 key A {
 	label:			'A'
 	base:			'a'
-	shift:			'A'
+	shift, capslock:			'A'
 	alt:			'!'
 }
 
 key B {
 	label:			'B'
 	base:			'b'
-	shift:			'B'
+	shift, capslock:			'B'
 	alt:			'+'
 }
 
 key C {
 	label:			'C'
 	base:			'c'
-	shift:			'C'
+	shift, capslock:			'C'
 	alt:			'+'
 }
 
 key D {
 	label:			'D'
 	base:			'd'
-	shift:			'D'
+	shift, capslock:			'D'
 	alt:			'$'
 }
 
 key E {
 	label:			'E'
 	base:			'e'
-	shift:			'E'
+	shift, capslock:			'E'
 	alt:			'3'
 }
 
 key F {
 	label:			'F'
 	base:			'f'
-	shift:			'F'
+	shift, capslock:			'F'
 	alt:			'%'
 }
 
 key G {
 	label:			'G'
 	base:			'g'
-	shift:			'G'
+	shift, capslock:			'G'
 	alt:			'&'
 }
 
 key H {
 	label:			'H'
 	base:			'h'
-	shift:			'H'
+	shift, capslock:			'H'
 	alt:			'*'
 }
 
 key I {
 	label:			'I'
 	base:			'i'
-	shift:			'I'
+	shift, capslock:			'I'
 	alt:			'8'
 }
 
 key J {
 	label:			'J'
 	base:			'j'
-	shift:			'J'
+	shift, capslock:			'J'
 	alt:			'('
 }
 
 key K {
 	label:			'K'
 	base:			'k'
-	shift:			'K'
+	shift, capslock:			'K'
 	alt:			')'
 }
 
 key L {
 	label:			'L'
 	base:			'l'
-	shift:			'L'
+	shift, capslock:			'L'
 	alt:			'\\'
 }
 
 key M {
 	label:			'M'
 	base:			'm'
-	shift:			'M'
+	shift, capslock:			'M'
 	alt:			'"'
 }
 
 key N {
 	label:			'N'
 	base:			'n'
-	shift:			'N'
+	shift, capslock:			'N'
 	alt:			'\''
 }
 
 key O {
 	label:			'O'
 	base:			'o'
-	shift:			'O'
+	shift, capslock:			'O'
 	alt:			'9'
 }
 
 key P {
 	label:			'P'
 	base:			'p'
-	shift:			'P'
+	shift, capslock:			'P'
 	alt:			'0'
 }
 
 key Q {
 	label:			'Q'
 	base:			'q'
-	shift:			'Q'
+	shift, capslock:			'Q'
 	alt:			'1'
 }
 
 key R {
 	label:			'R'
 	base:			'r'
-	shift:			'R'
+	shift, capslock:			'R'
 	alt:			'4'
 }
 
 key S {
 	label:			'S'
 	base:			's'
-	shift:			'S'
+	shift, capslock:			'S'
 	alt:			'#'
 }
 
 key T {
 	label:			'T'
 	base:			't'
-	shift:			'T'
+	shift, capslock:			'T'
 	alt:			'5'
 }
 
 key U {
 	label:			'U'
 	base:			'u'
-	shift:			'U'
+	shift, capslock:			'U'
 	alt:			'7'
 }
 
 key V {
 	label:			'V'
 	base:			'v'
-	shift:			'V'
+	shift, capslock:			'V'
 	alt:			'='
 }
 
 key W {
 	label:			'W'
 	base:			'w'
-	shift:			'W'
+	shift, capslock:			'W'
 	alt:			'2'
 }
 
 key X {
 	label:			'X'
 	base:			'x'
-	shift:			'X'
+	shift, capslock:			'X'
 	alt:			'-' 
 }
 
 key Y {
 	label:			'Y'
 	base:			'y'
-	shift:			'Y'
+	shift, capslock:			'Y'
 	alt:			'6'
 }
 
 key Z {
 	label:			'Z'
 	base:			'z'
-	shift:			'Z'
+	shift, capslock:			'Z'
 	alt:			'_'
 }
 
 key COMMA {
 	label:			','
 	base:			','
-	shift:			','
+	shift, capslock:			','
 	alt:			';'
 }
 
 key PERIOD {
 	label:			'.'
 	base:			'.'
-	shift:			'.'
+	shift, capslock:			'.'
 	alt:			':'
 }
 
 key SPACE {
 	label:			'\u0020'
 	base:			'\u0020'
-	shift:			'\u0020'
+	shift, capslock:			'\u0020'
 	alt:			'\u0009'
 }
 
 key ENTER {
 	label:			'\u000A'
 	base:			'\u000A'
-	shift:			'\u000A'
+	shift, capslock:			'\u000A'
 	alt:			'\u000A'
 }
 
 key AT {
 	label:			'@'
 	base:			'@'
-	shift:			'@'
+	shift, capslock:			'@'
 	alt:			'~'
 }
 
 key F1 {
 	label:			'\uEF04'
 	base:			'\uEF04'
-	shift:			'\uEF04'
+	shift, capslock:			'\uEF04'
 	alt:			'\uEF03'
 }
 
 key F2 {
 	label:			'\uEF01'
 	base:			'\uEF01'
-	shift:			'\uEF01'
+	shift, capslock:			'\uEF01'
 	alt:			'\uEF01'
 }
 
 key SLASH {
 	label:			'?'
 	base:			'?'
-	shift:			'?'
+	shift, capslock:			'?'
 	alt:			'/'
 }
