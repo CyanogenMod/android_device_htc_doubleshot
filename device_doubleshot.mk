@@ -104,6 +104,10 @@ PRODUCT_COPY_FILES += \
 # Bluetooth firmware
 $(call inherit-product, device/htc/msm8660-common/bcm_hcd.mk)
 
+# Bluetooth vendor conf
+PRODUCT_COPY_FILES += \
+    device/htc/doubleshot/bluetooth/bt_vendor.conf:/system/etc/bluetooth/bt_vendor.conf
+
 ## misc
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enable_bypass=1 \
