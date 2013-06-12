@@ -57,3 +57,6 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 # bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUEDROID_VENDOR_CONF := device/htc/msm8660-common/bluetooth/vnd_msm8660.txt
+
+# HTC specific
+BOARD_USE_NEW_LIBRIL_HTC := true
